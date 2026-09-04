@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Бронювання готелю</title>
+</head>
+<body>
+<h1>Бронювання номера в готелі</h1>
+<form action="#" method="post">
+    <p><label>Ім'я та прізвище: <input type="text" name="name" required></label></p>
+    <p><label>Пошта: <input type="email" name="email" required></label></p>
+    <p><label>Телефон: <input type="tel" name="phone"></label></p>
+    <p><label>Дата заїзду: <input type="date" name="checkin" required></label></p>
+    <p><label>Дата виїзду: <input type="date" name="checkout" required></label></p>
+    <p><label>Кількість гостей: <input type="number" name="guests" min="1" max="6" required></label></p>
+
+    <p>Тип номера:
+        <label><input type="radio" name="room" value="Стандарт" required> Стандарт</label>
+        <label><input type="radio" name="room" value="Напівлюкс"> Напівлюкс</label>
+        <label><input type="radio" name="room" value="Люкс"> Люкс</label>
+    </p>
+
+    <p>Додаткові послуги:
+        <label><input type="checkbox" name="service" value="Сніданок"> Сніданок</label>
+        <label><input type="checkbox" name="service" value="Паркінг"> Паркінг</label>
+        <label><input type="checkbox" name="service" value="Трансфер"> Трансфер</label>
+        <label><input type="checkbox" name="service" value="Прибирання"> Прибирання</label>
+    </p>
+
+    <p><label>Місто:
+        <select name="city">
+            <option>Київ</option>
+            <option>Львів</option>
+            <option>Одеса</option>
+            <option>Ужгород</option>
+            <option>Чернівці</option>
+        </select>
+    </label></p>
+
+    <p><label>Додаткові побажання (до 250 символів):<br>
+        <textarea name="wishes" rows="4" cols="40" maxlength="250"></textarea>
+    </label></p>
+
+    <button type="submit">Забронювати</button>
+    <button type="reset">Очистити</button>
+</form>
+</body>
+</html>
