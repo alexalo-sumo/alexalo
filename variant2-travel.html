@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Подорожі Україною</title>
+</head>
+<body>
+
+<header>
+  <h1>Подорожі Україною</h1>
+
+  <nav aria-label="Основна навігація">
+    <ul>
+      <li><a href="index.html">Головна сторінка</a></li>
+      <li><a href="tours.html">Наші тури</a></li>
+      <li><a href="contacts.html">Контакти</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <h2>Популярні напрямки</h2>
+
+  <img src="karpaty.jpg"
+       alt="Гірський краєвид Карпат: вкриті лісом схили та туман у долині">
+
+  <p>
+    Карпати — популярний напрямок для відпочинку.
+  </p>
+
+  <h2>Замовлення туру</h2>
+
+  <form action="order.php" method="post">
+    <p>
+      <label for="name">Ваше ім'я:</label>
+      <input type="text" id="name" name="name" autocomplete="name" required>
+    </p>
+
+    <p>
+      <label for="phone">Телефон:</label>
+      <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+    </p>
+
+    <p>
+      <button type="submit">Відправити заявку</button>
+    </p>
+  </form>
+
+</body>
+</html>
