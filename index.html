@@ -1,45 +1,80 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <title>Мій улюблений фільм - F1</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Store</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav>
-        <a href="index.html">Головна</a> |
-        <a href="info.html">Про фільм</a>
-    </nav>
+  <header>
+    <h1>Tech Store</h1>
+  </header>
 
-    <h1>F1</h1>
+  <nav class="menu">
+    <a href="#">Головна</a>
+    <a href="#">Товари</a>
+    <a href="#">Контакти</a>
+  </nav>
 
-    <h2>Про що фільм</h2>
-    <p>
-        Фільм F1 про перегони. Головну роль грає <strong>Бред Пітт</strong>.<br>
-        Він грає гонщика, який повертається у спорт.
-    </p>
+  <main>
+    <h2>Популярні товари</h2>
 
-    <h3>Моя думка</h3>
-    <p>
-        Сцени перегонів <em>дуже круті</em>.
-    </p>
+    <div class="product">
+      <span class="discount">-20%</span>
+      <h2>Ноутбук</h2>
+      <p>Ноутбук для навчання та роботи.</p>
+      <p class="price">25 000 грн</p>
+    </div>
 
-    <hr>
+    <div class="product">
+      <span class="discount">-15%</span>
+      <h2>Смартфон</h2>
+      <p>Потужний смартфон з якісною камерою.</p>
+      <p class="price">15 000 грн</p>
+    </div>
 
-    <h2 id="personazhi">Персонажі</h2>
-    <ul>
-        <li>Сонні Хейз</li>
-        <li>Джошуа Пірс</li>
-        <li>Рубен Сервантес</li>
-        <li>Кейт МакКенна</li>
-    </ul>
+    <div class="product">
+      <span class="discount">-10%</span>
+      <h2>Бездротові навушники</h2>
+      <p>Навушники для музики та дзвінків.</p>
+      <p class="price">3 500 грн</p>
+    </div>
 
-    <h2>Чому варто подивитись</h2>
-    <ol>
-        <li>Круті перегони</li>
-        <li>Хороші актори</li>
-        <li>Цікавий сюжет</li>
-    </ol>
-<img src="https://www.imdb.com/title/tt16311594/mediaviewer/rm111130370/?ref_=tt_ov_i" alt="Фільм F1" width="500">
+    <h2>Завдання 1: position: static</h2>
+    <div class="static-box">Перший блок</div>
+    <div class="static-box">Другий блок</div>
+    <div class="static-box">Третій блок</div>
+
+    <h2>Завдання 2: position: relative</h2>
+    <div class="relative-box">Цей блок зміщений</div>
+
+    <h2>Завдання 4: кнопка поверх зображення</h2>
+    <div class="banner">
+      <img src="banner.jpg" alt="Реклама">
+      <button class="banner-button">Детальніше</button>
+    </div>
+
+    <h2>Завдання 8: накладання елементів</h2>
+    <div class="layers">
+      <div class="box1">Блок 1</div>
+      <div class="box2">Блок 2</div>
+    </div>
+
+    <p>Додатковий текст сторінки для перевірки прокручування...</p>
+    <p>Додатковий текст сторінки для перевірки прокручування...</p>
+    <p>Додатковий текст сторінки для перевірки прокручування...</p>
+    <p>Додатковий текст сторінки для перевірки прокручування...</p>
+    <p>Додатковий текст сторінки для перевірки прокручування...</p>
+    <p>Додатковий текст сторінки для перевірки прокручування...</p>
+    <p>Додатковий текст сторінки для перевірки прокручування...</p>
+    <p>Додатковий текст сторінки для перевірки прокручування...</p>
+    <p>Додатковий текст сторінки для перевірки прокручування...</p>
+    <p>Додатковий текст сторінки для перевірки прокручування...</p>
+  </main>
+
+  <button class="help">Допомога</button>
+
 </body>
 </html>
