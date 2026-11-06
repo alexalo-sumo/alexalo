@@ -1,36 +1,116 @@
 <!DOCTYPE html>
-<html lang="uk">
-<head>
+<html lang="ukrainian">
+<head> 
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Профіль користувача</title>
-  <link rel="stylesheet" href="style-scss.css">
-  <!-- Для Less-версії замініть на: style-less.css -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Портфоліо веброзробника — Олександр Приймак</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="profile">
-    <div class="profile__banner"></div>
-    <div class="profile__body">
-      <img class="profile__photo" src="avatar.svg" alt="Фото профілю">
-      <h1 class="profile__name">Олександр Приймак</h1>
-      <p class="profile__role">Веброзробник</p>
-      <p class="profile__desc">Створюю адаптивні сайти та вивчаю CSS-препроцесори. Люблю чистий код і яскравий дизайн.</p>
 
-      <div class="profile__tags">
-        <span>HTML</span><span>CSS</span><span>Sass</span><span>Less</span>
-      </div>
-
-      <ul class="profile__stats">
-        <li><strong>128</strong>публікацій</li>
-        <li><strong>2,4K</strong>підписників</li>
-        <li><strong>312</strong>підписок</li>
-      </ul>
-
-      <div class="profile__actions">
-        <button class="btn--primary">Підписатися</button>
-        <button class="btn--secondary">Повідомлення</button>
-      </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">OP<span>.dev</span></a>
+      <nav class="nav">
+        <a href="#about">Про мене</a>
+        <a href="#skills">Навички</a>
+        <a href="#projects">Проєкти</a>
+        <a href="#contact">Контакти</a>
+      </nav>
     </div>
+  </header>
+
+  <main>
+    <section class="hero" id="about">
+      <div class="container hero-inner">
+        <img class="hero-photo" src="photo.svg" alt="Фотографія Олександра Приймака">
+        <div class="hero-info">
+          <h1>Олександр Приймак</h1>
+          <p class="role">Веброзробник</p>
+          <p class="desc">
+            Створюю сучасні адаптивні вебсайти та інтернет-магазини.
+            зручні інтерфейси та сторінок
+          </p>
+          <div class="hero-buttons">
+            <a class="btn btn-primary" href="#projects">Мої проєкти</a>
+            <a class="btn btn-outline" href="#contact">Зв'язатися</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="container">
+        <h2>Навички</h2>
+        <ul class="skills">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>Flexbox</li>
+          <li>CSS Grid</li>
+          <li>JavaScript</li>
+          <li>Git / GitHub</li>
+          <li>Адаптивний дизайн</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <h2>Мої проєкти</h2>
+        <div class="projects">
+
+          <article class="card">
+            <h3>Інтернет-магазин</h3>
+            <p>Каталог товарів із адаптивною сіткою карток, кошиком і фільтрами за категоріями.</p>
+            <p class="tags">htmll </HTML></p>
+            <div class="card-buttons">
+              <a class="btn btn-primary" href="#">Демо</a>
+              <a class="btn btn-outline" href="#">Код</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Лендінг для кав'ярні</h3>
+            <p>Одностороннка з меню, галереєю та формою бронювання столика.</p>
+            <p class="tags">HTML · CSS · Flexbox</p>
+            <div class="card-buttons">
+              <a class="btn btn-primary" href="#">Демо</a>
+              <a class="btn btn-outline" href="#">Код</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Навчальна платформа</h3>
+            <p>Сторінка з каталогом курсів, адаптивним меню категорій і картками курсів.</p>
+            <p class="tags">HTML · CSS · Media Queries</p>
+            <div class="card-buttons">
+              <a class="btn btn-primary" href="#">Демо</a>
+              <a class="btn btn-outline" href="#">Код</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <h3>Туристичний сайт</h3>
+            <p>Пропозиції подорожей із фотографіями напрямків, описами та кнопками «Детальніше».</p>
+            <p class="tags">HTML ·</p>
+            <div class="card-buttons">
+              <a class="btn btn-primary" href="#">Демо</a>
+              <a class="btn btn-outline" href="#">Код</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
   </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container">
+      <h2>Контакти</h2>
+      <p>Email: <a href="mailto:oleksandr.pryimak@gmail.com">oleksandr.pryimak@gmail.com</a></p>
+      <p>© 2026 Олександр Приймак</p>
+    </div>
+  </footer>
+
 </body>
 </html>
